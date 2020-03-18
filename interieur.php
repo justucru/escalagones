@@ -1,59 +1,36 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php include '_header.html'; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="CSS/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Grimper en salle</title>
-</head>
-
-<body>
-    <?php include '_header.html'; ?>
-
-
+<main>
     <h2 id="grimperensalle"> Grimper en intérieur </h2>
-
-    <!--Nouvelle en-tête Amélie-->
-
     <div class="banniere_bloc"></div>
+
     <div class="texteInterieur">
-    <h3 class="intro_para">Grimper en bloc ou en voie, c'est possible sur Lyon et ses alentours ! Petite revue
-            des sites
-            inmanquables.</h3>
-    <p class="intro_para">Ici vous découvrirez les salles destinées uniquement au bloc, ainsi que les salles proposant
-        des voies.</p>
+        <h3 class="intro_para">Grimper en bloc ou en voie, c'est possible sur Lyon et ses alentours ! Petite revue
+            des sites inmanquables.</h3>
+            <p class="intro_para">Ici vous découvrirez les salles destinées uniquement au bloc, ainsi que les salles proposant des voies.</p>
     </div>
+
     <div class="liste_salles">
         <div class="listing_block">
             <h3>Salles de bloc</h3>
-            <ul>
-                <li class="li_menu-esc"><a href="#mroc">MROC LAENNEC </a></li>
-                <li class="li_menu-esc"><a href="#mroc">MROC PART-DIEU </a></li>
-                <li class="li_menu-esc"><a href="#mroc">MROC VILLEURBANNE </a></li>
-            </ul>
+                <ul>
+                    <li class="li_menu-esc"><a href="#mroc">MROC LAENNEC </a></li>
+                    <li class="li_menu-esc"><a href="#mroc">MROC PART-DIEU </a></li>
+                    <li class="li_menu-esc"><a href="#mroc">MROC VILLEURBANNE </a></li>
+                </ul>
         </div>
 
         <div class="listing_voies">
             <h3>Salles de voies</h3>
-            <ul>
-                <li  class="li_menu-esc"><a href="#verticalart">VERTICAL'ART</a> </li>
-                <li  class="li_menu-esc"><a href="#climbup">CLIMB UP LYON CONFLUENCE </a></li>
-                <li  class="li_menu-esc"><a href="#climbup">CLIMB UP LYON GERLAND</a> </li>
-                <li  class="li_menu-esc"><a href="#holdup">HOLD'UP ESCALADE</a> </li>
-                <li  class="li_menu-esc"><a href="#arbresle">ESPACE ESALADE A L'ARBRESLE</a> </li>
-
-            </ul>
-
+                <ul>
+                    <li  class="li_menu-esc"><a href="#verticalart">VERTICAL'ART</a> </li>
+                    <li  class="li_menu-esc"><a href="#climbup">CLIMB UP LYON CONFLUENCE </a></li>
+                    <li  class="li_menu-esc"><a href="#climbup">CLIMB UP LYON GERLAND</a> </li>
+                    <li  class="li_menu-esc"><a href="#holdup">HOLD'UP ESCALADE</a> </li>
+                    <li  class="li_menu-esc"><a href="#arbresle">ESPACE ESALADE A L'ARBRESLE</a> </li>
+                </ul>
         </div>
     </div>
-
-    <!-- Fin nouvelle en-tete Amélie-->
-
 
     <article class="cardSalles">
 
@@ -61,10 +38,8 @@
             <div class="card-header">MROC LAENNEC, PART-DIEU, VILLEURBANNE
             </div>
             <div class="para_escalade">
-                <p>Trois sites sur Lyon (Laennec, Part-Dieu et Villeurbanne), présentant chacune une superficie de plus de 1000m².
-                </p>
-                <p>Horaires : Du Lundi au Dimanche de 09h00 à 00h00
-                </p>
+                <p>Trois sites sur Lyon (Laennec, Part-Dieu et Villeurbanne), présentant chacune une superficie de plus de 1000m².</p>
+                <p>Horaires : Du Lundi au Dimanche de 09h00 à 00h00</p>
             </div>
             <div class="card-body liens_web">
                 <a href="https://laennec.mroc.fr/" target="_blank"> Site WEB de Laennec</a>
@@ -85,8 +60,7 @@
             <div class="card-header">VERTICAL'ART
             </div>
             <div class="para_escalade">
-                <p>A 5 mn de Lyon un bâtiment de 2000m² dont 1000 m² grimpables aux blocs variés et accessibles à tous.
-                </p>
+                <p>A 5 mn de Lyon un bâtiment de 2000m² dont 1000 m² grimpables aux blocs variés et accessibles à tous.</p>
                 <p>Horaires : Du Lundi au Dimanche de 11h00 à 23h00.</p>
             </div>
             <div class="card-body liens_web">
@@ -98,17 +72,13 @@
             </div>
         </div>
 
-
         <div class="card" id="climbup" style="width: 27rem;">
             <div class="card-header">CLIMB UP LYON CONFLUENCE ET GERLAND
             </div>
             <div class="para_escalade">
                 <p>Fun Climbing et activités ludiques pour les plus jeunes, une salle de voies avec des
-                    murs de 22
-                    mètres de long et des itinéraires du.de la débutant.e à l'expert.e !</p>
-                <p>
-                    Horaires : Du Lundi au Dimanche de 10h00 à 23h30
-                </p>
+                    murs de 22 mètres de long et des itinéraires du.de la débutant.e à l'expert.e !</p>
+                <p>Horaires : Du Lundi au Dimanche de 10h00 à 23h30</p>
             </div>
             <div class="card-body liens_web">
                 <a href="https://lyon-confluence.climb-up.fr/" target=" _blank">Site WEB de Confluence </a>
@@ -122,17 +92,12 @@
             </div>
         </div>
 
-
-
         <div class="card " id="holdup" style="width: 27rem;">
             <div class="card-header">HOLD'UP ESCALADE
             </div>
             <div class="para_escalade">
-                <p>Voies, blocs, une des plus grandes salles d'escalade de
-                    France au cœur de Lyon. Grimpeur.se débutant.e ou confirmé.e, en cours ou en accès libre.</p>
-                <p>
-                    Horaires : Du Lundi au Dimanche de 11h00 à 22h00.
-                </p>
+                <p>Voies, blocs, une des plus grandes salles d'escalade de France au cœur de Lyon. Grimpeur.se débutant.e ou confirmé.e, en cours ou en accès libre.</p>
+                <p>Horaires : Du Lundi au Dimanche de 11h00 à 22h00.</p>
             </div>
             <div class="card-body liens_web">
                 <a href="http://holdup-escalade.fr/" target="_blank"> Site WEB Holdup </a>
@@ -143,18 +108,12 @@
             </div>
         </div>
 
-
         <div class="card " id="arbresle" style="width: 27rem;">
             <div class="card-header">ESPACE ESCALADE A L'ARBRESLE
             </div>
             <div class="para_escalade">
-                <p>Voies, blocs, grimpeur.se débutant.e ou confirmé.e, en cours ou en accès libre, enfant ou adulte, tous
-                    pratiquent dans ce
-                    même lieu de vie !</p>
-                <p>
-                    Horaires : Mardi & Jeudi 12:00-22:00 / Mercredi & Vendredi 14:00-22:00 /
-                    Samedi 09:00-18:00
-                </p>
+                <p>Voies, blocs, grimpeur.se débutant.e ou confirmé.e, en cours ou en accès libre, enfant ou adulte, tous pratiquent dans ce même lieu de vie !</p>
+                <p>Horaires : Mardi & Jeudi 12:00-22:00 / Mercredi & Vendredi 14:00-22:00 / Samedi 09:00-18:00</p>
             </div>
             <div class="card-body liens_web">
                 <a href="http://www.espace-escalade.com " target="_blank"> Site Web d'escalade de l'Arbresle</a>
@@ -166,22 +125,23 @@
         </div>
 
     </article>
+</main>
 
-    <?php include '_footer.html'; ?>
+<?php include '_footer.html'; ?>
 
-    <!-- JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="JavaScript/app.js"></script>
+<!-- JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="JavaScript/app.js"></script>
 </body>
 
 </html>

@@ -1,49 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-
-header{
+header {
     font-family: 'Fjalla One', sans-serif;
 }
-
 .texteAccueil, .texteInterieur, .texteExterieur, .titresEnsemble, .sstitre {
     text-align: center;
     padding: 20px;
     width: 80%;
     margin: 50px auto;
 }
-
-.texteAccueil p, .texteInterieur p, .texteExterieur p{
+.texteAccueil p, .texteInterieur p, .texteExterieur p {
     display: none;
 }
-
 .liste_salles {
     margin-bottom: 50px;
 }
-
 .liste_salles a {
     color: #5cb85c
 }
-
 .indooras {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-#titrepage{
+#titrepage {
     width: 100%;
     height: auto;
     position: relative;
 }
-
-#titrepage div img{
+#titrepage div img {
     width: 100%;
     height: auto;
 }
-
-.Mattitre h2{
+.Mattitre h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -52,9 +43,6 @@ header{
     color: #fff;
     font-weight: bold;   
 }
-
-/* BODY CARTES MATERIEL*/
-
 .seprate-line {
 	width: 20px; height: 3px; background: white;
 }
@@ -74,87 +62,63 @@ header{
   display: flex;
   flex-direction: column;
 }
-
-/*************************/
-
-/*IMAGES CARTES MATERIEL*/
-
-.cardprdt0 img{
+.cardprdt0 img {
     width: 300px;
     height: auto;
     margin-top: -110px;
     margin-left: -60px;
     margin-bottom: 10px;
 }
-
-
-.cardprdt1 img{
+.cardprdt1 img {
     width: 150px;
     height: auto;
     margin-top: -30px;
     margin-left: 60px;
     margin-bottom: 30px;
 }
-
-.cardprdt2 img{
+.cardprdt2 img {
     width: 150px;
     margin-left: 50px;
     margin-top: -30px;
     margin-bottom: 30px;
 }
-
-.cardprdt3 img{
+.cardprdt3 img {
     width: 150px;
     margin-left: 60px;
     margin-top: -30px;
     margin-bottom: 30px;
-
 }
-
-.cardprdt4 img{
+.cardprdt4 img {
     width: 150px;
     margin-left: 70px;
     margin-top: -30px;
     margin-bottom: 30px;
 }
-
-.cardprdt5 img{
+.cardprdt5 img {
     width: 150px;
     margin-top: -40px;
     margin-left: 50px;
     margin-bottom: 30px;
 }
-
-.cardprdt6 img{
+.cardprdt6 img {
     width: 250px;
     margin-top: -80px;
     margin-left: -30px;
     margin-bottom: 30px;
 }
-
-/************************/
-
-main h3, main h2{
+main h3, main h2 {
     text-align: center;
     margin-top: 20px;
 }
-
-
-/*   */
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
-/* Style pour titres toutes pages */
-
 .card-text {
     padding-bottom : 20px;
 }
-
-
 h2 {
     color : white;
     background-color: #B88A5C;
@@ -167,18 +131,13 @@ h2 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 8vw;
     letter-spacing: 0.1em;
-
 }
-
 h3 {
     color : #292b2c;
     padding : 10px;
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
 }
-
-/* CSS spécifique page grimperEnsemble.php */
-
 .sectionForm {
     display: flex;
     flex-direction: column;
@@ -193,7 +152,6 @@ h3 {
 .card_body{
     position : relative;
 }
-
 .cardButtonDiv {
     display : flex;
 }
@@ -209,28 +167,19 @@ h3 {
     align-self: flex-end;
     margin-right: 10%;
 }
-
 #formButton, #formButton2 {
     margin-left: 10px;
 }
-
 .creditPhoto {
     font-style: italic;
     font-size: 0.8em;
     color : grey;
 }
-
 .creditPhoto a {
     font-style: italic;
     color : grey;
     text-align: left;
 }
-
-/* fin CSS Jeff */
-
-/* debut css nico*/
-
-
 .btn-navigation {
     position: fixed;
     right: 30px;
@@ -238,7 +187,6 @@ h3 {
     z-index: 20;
     cursor: pointer;
 }
-
 .btn-navigation .barre {
     width: 30px;
     height: 3px;
@@ -247,11 +195,9 @@ h3 {
     transition: background 2s ease-in-out;
     --webkit-transition:background : transform 2s ease-in-out;
 }
-
 .btn-navigation .barre.white {
     background: white;
 }
-
 .nav-bar-escalade {
     position: fixed;
     right: 0;
@@ -260,36 +206,29 @@ h3 {
     min-width: 23%;
     height: 100%;
     z-index: 1;
-
     transform: translateX(100%);
-    
     transition: transform 1s ease-in-out;
     --webkit-transition:transition: transform 1s ease-in-out;
 }
-
 .nav-bar-escalade.isOpen {
     transform: translateX(0%);
     --webkit-transform: translateX(0%);
     transition: transform 1s ease-in-out;
     --webkit-transition:transition: transform 1s ease-in-out;
 }
-
 .nav-bar-escalade ul {
     display: flex;
     flex-direction: column;
     margin-top: 200px;
     padding-left: 20px;
 }
-
 .nav-bar-escalade ul li {
-    
     margin: 10px 0;
     padding: 10px;
     list-style-type: none;
     height: 100%;
     width: 80%;
 }
-
 .nav-bar-escalade ul li a {
     padding: 10px;
     font-size: 24px;
@@ -310,27 +249,20 @@ h3 {
     text-decoration: none; 
     background-color: aliceblue;  
 }
-.card-img-ext{
+.card-img-ext {
     width: 430px;
     height: 260px;
 }
-
-/*fin css nico */
-
-    /* début css amélie */
-
 .cardHomePage, .sectionCards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .cardHomePage div, .sectionCards div {
     margin: 10px;
 
 }
-
 #banniere {
     display: flex;
     flex-direction: column;
@@ -343,16 +275,12 @@ h3 {
     background-position: center;
     background-size: cover;
 }
-
-#banniere h2, #banniere p{
+#banniere h2, #banniere p {
     background-color: rgba(0,0,0,0.5);
     border-radius: 5px;
     padding : 5px 10px;
 }
-
-/* CSS Amélie pour haut de page intérieur*/
-
-.banniere_bloc{
+.banniere_bloc {
     background-image: url(../images/pp_voie4.jpg);
     height: 300px;
     background-repeat: no-repeat;
@@ -360,28 +288,20 @@ h3 {
     background-size: cover;
     margin-top: -10px;
 }
-
-.intro_para{
+.intro_para {
     margin: 20px;
     text-align: center;
 }
- .liste_salles{
+.liste_salles {
      text-align: center;
      color: black;  
- }
-
-/* Fin css Amélie pour haut de page intérieur */
-
-/*Début Css Amélie pour tableau matériel*/
-
-.choixMateriel{
+}
+.choixMateriel {
     margin-top: 150px;
 }
-
-table{
+table {
     margin-top: 50px;
 }
-
 .table-responsive { 
     width: 80%;
     margin: auto;
@@ -389,61 +309,22 @@ table{
 thead {
     align-items: center;
 }
-
-
-
-
-/* fin css amélie */
-
-/* début css justine */
 footer {
     background-color: #292b2c;
     margin-top: auto;
     width: 100%;
 }
-
-    footer img {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    /* fin css justine */
-/* 
- Début CSS Pascal */
-
+footer img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
 #accordion {
     width: 80%;
     margin : auto;
     min-width: 20%;
 }
-
-/* 
-.btn {
-    color: white;
-}
- */
-
-
-/*.intro_bloc_voie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    }
-
-
-.intro_para {
-    text-align: center;
-    width: 60%;
-    padding:5px 10px;
-    border:2px solid black;
-    border-radius: 10px;
-
-}*/
-
-
 .cardSalles  {
     display: flex;
     flex-direction: row;
@@ -452,70 +333,50 @@ footer {
     align-items: center;
     margin-top: 20px;
 }
-
 .cardSalles .card {
     margin: 10px;
-
     height: 500px;
-    
 }
-
 .cardSalles a {
     color: #5cb85c
 }
-
-
-.voie  {
+.voie {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
-
 .liens_web {
     border:1px solid #f7f7f7;
     margin : 10px;
     padding: 10px;
     text-align: center;
 }
-
-
-.lien_google{
+.lien_google {
     text-align: center;
     margin : 10px;
     padding: 10px;
 }
-
 .lien_google_mroc a {
     padding: 30px;
     text-align: center;
 }
-
 .lien_google_mroc p {
     padding-left: 30px;
     text-align: center;
 }
-
-/* .lien_google_climbup a {
-    padding: 50px; 
-
-} */
-
-.lien_google_climbup  {
+.lien_google_climbup {
     margin: auto;
     text-align: center;
 }
-
 .li_menu-esc {
     list-style-type: none;
 }
-
-#mroc{
+#mroc {
     height: 400px;
 }
-#verticalart{
+#verticalart {
     height: 400px;
 }
 #climbup {
@@ -533,68 +394,42 @@ footer {
 #arbresle { 
     height: 400px;
 }
-
 .para_escalade {
     margin : 10px;
     height: 150px;
     padding: 10px;
-    border:2px solid #f7f7f7 
+    border:2px solid #f7f7f7
 }
-
-
-
-/* 
-iframe {
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-} */
-
-/*.listing_block {
-    display: flex;
-}*/
-
 .ul_block {
     display: flex;
     justify-content: space-around;
     width:100%;
     border : 1px solid red;
 }
-
-/* Fin CSS Pascal */
-
 .liens-footer {
     display: flex;
     flex-direction: column;
     margin: 25px auto;
     padding-top: 25px;
 }
-
-
 .hautDePage a {
     text-decoration: none;
     color:#5cb85c;
     float: right;
 }
-
 footer a {
     text-align: center;
     padding: 5px;
     margin: 5px;
-    
 }
-
-footer a:link{
+footer a:link {
     text-decoration: none;
     color: #fff;
 }
-
-footer a:visited{
+footer a:visited {
     text-decoration: none;
     color: #fff;
 }
-
 .reseaux-sociaux {
     display: flex;
     flex-direction: row;
@@ -602,38 +437,30 @@ footer a:visited{
     align-items: center;
     padding-bottom: 25px;
 }
-
 footer img {
     width: 40px;
     height: 40px;
     padding: 5px;
     margin: 5px;
 }
-
-
-/* fin css justine */
-.link-ext{
+.link-ext {
     display: flex;
     justify-content: space-around;
     background-color: #5cb85c;
     padding: 10px 0;
-    
 }
-.card-body .link-ext a{
+.card-body .link-ext a {
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
 
-
 @media only screen and (min-width:961px) {
-    /* debut responsive nico */
-  
+
     .btn-navigation {
         position: relative;
         display: none;
     }
-
     .nav-bar-escalade {
     position: static;
     left: 0;
@@ -641,27 +468,21 @@ footer img {
     opacity: 1;
     z-index:0;
     transform: translateX(0%);
-
     transition: transform 1s ease-in-out;
     --webkit-transition:transition: transform 1s ease-in-out;
-
     }
-
     .nav-bar-escalade.isOpen {
     transform: translateX(0%);
     --webkit-transform: translateX(0%);
     transition: transform 1s ease-in-out;
     --webkit-transition:transition: transform 1s ease-in-out;
     }
-
     .nav-bar-escalade ul {
     display: flex;
     flex-direction: row;
     margin: 0;
     justify-content: space-around;
-    
     }
-
     .nav-bar-escalade ul li {
     display: flex;
     justify-content: space-around;
@@ -670,15 +491,13 @@ footer img {
     list-style-type: none;
     }
     .nav-bar-escalade ul li :hover,
-    .nav-bar-escalade ul li a:hover{
+    .nav-bar-escalade ul li a:hover {
     background-color: aliceblue;
     color: #5cb85c;
     }
-
     .texteAccueil p, .texteInterieur p, .texteExterieur p {
         display: block;
     }
-    
     .liste_salles {
         display: flex;
         justify-content: space-around;
@@ -687,23 +506,16 @@ footer img {
         margin: 50px auto;
         border: 1px solid #292b2c;
     }
-
-  
-
-    /* fin responsive nico */
-
     footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     }
-
     footer a {
     text-align: left;
     padding: 1px;
     margin: 1px;
     }
-
     .home a:hover {
         text-decoration: none;
         color:#292b2c;
@@ -722,12 +534,10 @@ footer img {
         margin: 15px;
         padding: 0px;
     }
-
     .liens-footer {
         margin: 0px;
         padding: 30px;
     }
-
     .reseaux-sociaux {
     padding: 30px;
     }

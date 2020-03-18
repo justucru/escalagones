@@ -6,38 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="../CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="CSS/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Grimper en salle</title>
 </head>
 
 <body>
-    <header>
-        <div class="btn-navigation">
-            <div class="barre"></div>
-            <div class="barre"></div>
-            <div class="barre"></div>
-            <div class="barre"></div>
-        </div>
-
-        <div class="body-header">
-            <nav class="nav-bar-escalade">
-                <ul >
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="interieur.html">Intérieur</a></li>
-                    <li><a href="exterieur.html">Extérieur</a></li>
-                    <li><a href="grimperEnsemble.html">Grimper ensemble</a></li>
-                    <li><a href="materiel.html">Matériel</a></li>
-                    <li><a href="grimperEnsemble.html#formulaire" title="ouvre un formulaire de contact">Contactez-nous</a></li>
-
-
-                </ul>
-            </nav>
-
-        </div>
-
-    </header>
+    <?php include '_header.html'; ?>
 
 
     <h2 id="grimperensalle"> Grimper en intérieur </h2>
@@ -191,44 +167,7 @@
 
     </article>
 
-    <footer>
-        <div class="liens-footer">
-
-            <a href="index.html" title="permet de retourner sur le haut de la page d'accueil">Retour à l'accueil</a>
-            <a href="grimperEnsemble.html#formulaire" title="ouvre un formulaire de contact">Contactez-nous</a>
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"
-                title="permet de voir les mentions légales du site">Mentions légales</a>
-
-        </div>
-        <div class="reseaux-sociaux">
-            <img src="../images/facebook.png" alt="icone facebook">
-            <img src="../images/twitter.png" alt="icone twitter">
-            <img src="../images/instagram.png" alt="icone instagram">
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Mentions légales</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Auteurs : Adama - Amélie - Jeff - Justine - Nico - Pascal</p>
-                        <p>Wild Code School - Campus de Lyon - Session de mars 2020</p>
-                        <p>Escalagones est un site fictif créé dans le cadre du projet #1 du programme Développement Web
-                            (du 9 au 13 mars 2020). Les personnes et événements présentes sur le site sont fictifs.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include '_footer.html'; ?>
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -242,7 +181,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../JavaScript/app.js"></script>
+    <script src="JavaScript/app.js"></script>
 </body>
 
 </html>

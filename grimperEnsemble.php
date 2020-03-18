@@ -9,39 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link href="../CSS/style.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Escalagones - Grimper Ensemble</title>
 </head>
 
 <body>
-    <header>
-        <div class="btn-navigation">
-            <div class="barre"></div>
-            <div class="barre"></div>
-            <div class="barre"></div>
-            <div class="barre"></div>
-        </div>
-
-        <div class="body-header">
-            <nav class="nav-bar-escalade">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="interieur.html">Intérieur</a></li>
-                    <li><a href="exterieur.html">Extérieur</a></li>
-                    <li><a href="grimperEnsemble.html">Grimper ensemble</a></li>
-                    <li><a href="materiel.html">Matériel</a></li>
-                    <li><a href="grimperEnsemble.html#formulaire"
-                            title="ouvre un formulaire de contact">Contactez-nous</a></li>
-
-
-                </ul>
-            </nav>
-
-        </div>
-
-    </header>
+    <?php include '_header.html'; ?>
     <!-- Code pour la page "Grimper Ensemble"-->
 
 
@@ -54,7 +29,7 @@
     <section class="sectionCards">
         <!-- Evènement 1-->
         <div class="card" style="width: 18rem;">
-            <img src="../images/gd_climber_force.jpg" class="card-img-top" alt="Une personne escalade un mur en intérieur">
+            <img src="images/gd_climber_force.jpg" class="card-img-top" alt="Une personne escalade un mur en intérieur">
             <div class="card-body">
                 <h5 class="card-title">Challenge Grimpe</h5>
 
@@ -69,7 +44,7 @@
         </div>
         <!-- Evènement 2-->
         <div class="card" style="width: 18rem;">
-            <img src="../images/gd_iceClimb.jpg" class="card-img-top" alt="Deux grimpeurs sur une cascade gelée">
+            <img src="images/gd_iceClimb.jpg" class="card-img-top" alt="Deux grimpeurs sur une cascade gelée">
             <div class="card-body">
                 <h5 class="card-title">Ice Climbing !</h5>
 
@@ -85,7 +60,7 @@
 
         <!-- Evènement 3-->
         <div class="card" style="width: 18rem;">
-            <img src="../images/gd_enFamille.png" class="card-img-top" alt="Deux enfants font de l'escalade">
+            <img src="images/gd_enFamille.png" class="card-img-top" alt="Deux enfants font de l'escalade">
             <div class="card-body">
                 <h5 class="card-title">Grimper avec vos Gones !</h5>
 
@@ -115,7 +90,7 @@
     <section class="sectionCards">
 
         <div class="card" style="width: 18rem;">
-            <img src="../images/gd_robert.jpg" class="card-img-top" alt="Photo de Robert">
+            <img src="images/gd_robert.jpg" class="card-img-top" alt="Photo de Robert">
             <div class="card-body">
                 <h5 class="card-title">Robert</h5>
                 <p class="card-text">Robert, grimpeur expert à Villeurbanne cherche un.e partenaire de grimpe,
@@ -126,7 +101,7 @@
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="../images/gd_claire.png" class="card-img-top" alt="Photo de Claire">
+            <img src="images/gd_claire.png" class="card-img-top" alt="Photo de Claire">
             <div class="card-body">
                 <h5 class="card-title">Claire</h5>
                 <p class="card-text">Claire, grimpeuse expérimentée, cherche un.e partenaire de grimpe,
@@ -176,48 +151,9 @@
 
     </form>
 
-   
 
-<footer>
-    <div class="liens-footer">
 
-        <a href="index.html" title="permet de retourner sur le haut de la page d'accueil">Retour à l'accueil</a>
-        <a href="grimperEnsemble.html#formulaire" title="ouvre un formulaire de contact">Contactez-nous</a>
-        <a href="#" data-toggle="modal" data-target="#exampleModalCenter"
-            title="permet de voir les mentions légales du site">Mentions légales</a>
-
-    </div>
-    <div class="reseaux-sociaux">
-        <img src="../images/facebook.png" alt="icone facebook">
-        <img src="../images/twitter.png" alt="icone twitter">
-        <img src="../images/instagram.png" alt="icone instagram">
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Mentions légales</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Auteurs : Adama - Amélie - Jeff - Justine - Nico - Pascal</p>
-                    <p>Wild Code School - Campus de Lyon - Session de mars 2020</p>
-                    <p>Escalagones est un site fictif créé dans le cadre du projet #1 du programme Développement Web
-                        (du 9 au 13 mars 2020). Les personnes et événements présentes sur le site sont fictifs.</p>
-                </div>
-                <div class="modal-footer">
-
-                    <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+    <?php include '_footer.html'; ?>
 
 <!-- JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -231,7 +167,7 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="../JavaScript/app.js"></script>
+<script src="JavaScript/app.js"></script>
 </body>
 
 </html>

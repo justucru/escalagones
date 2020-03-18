@@ -8,36 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Bienvenue sur Escalagones !</title>
 </head>
 
 <body>
-    <header>
-        <div class="btn-navigation">
-            <div class="barre"></div>
-            <div class="barre"></div>
-            <div class="barre"></div>
-            <div class="barre"></div>
-        </div>
-
-        <div class="body-header">
-            <nav class="nav-bar-escalade">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="interieur.html">Intérieur</a></li>
-                    <li><a href="exterieur.html">Extérieur</a></li>
-                    <li><a href="grimperEnsemble.html">Grimper ensemble</a></li>
-                    <li><a href="materiel.html">Matériel</a></li>
-                    <li><a href="grimperEnsemble.html#formulaire" title="ouvre un formulaire de contact">Contactez-nous</a></li>
-                </ul>
-            </nav>
-
-        </div>
-
-    </header>
+    <?php include '_header.html'; ?>
 
     <div id="banniere">
         <h2>Escalagones</h2>
@@ -57,7 +35,7 @@
                 <p class="card-text">Il existe différentes salles pour grimper sur Lyon, que vous soyez adeptes du bloc
                     ou de
                     la voie. Découvrez ici les différents pratiques, les salles et leurs offres !</p>
-                <a href="interieur.html" class="btn btn-success cardButton">Voir plus</a>
+                <a href="interieur.php" class="btn btn-success cardButton">Voir plus</a>
             </div>
         </div>
 
@@ -67,7 +45,7 @@
                 <p class="card-text">Grimper en extérieur est accessible à tous, à conditions de connaître les bons
                     spots !
                     Découvrez ici les meilleurs endroits pour grimper en extérieur, dans Lyon et ses environs.</p>
-                <a href="exterieur.html" class="btn btn-success cardButton">Voir plus</a>
+                <a href="exterieur.php" class="btn btn-success cardButton">Voir plus</a>
             </div>
         </div>
         
@@ -81,7 +59,7 @@
                     partenaire. Vous pouvez-aussi retrouver des événements pour grimper en extérieur ou proposer vos
                     propres
                     événements ! </p>
-                <a href="grimperEnsemble.html" class="btn btn-success cardButton">Voir plus</a>
+                <a href="grimperEnsemble.php" class="btn btn-success cardButton">Voir plus</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -91,7 +69,7 @@
                     êtes au
                     bon endroit. Retrouvez le matériel de base pour du bloc, de la voie, ou l'aventure à l'extérieur.
                 </p>
-                <a href="materiel.html" class="btn btn-success cardButton">Voir plus</a>
+                <a href="materiel.php" class="btn btn-success cardButton">Voir plus</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
@@ -100,50 +78,13 @@
                 <p class="card-text">Une question ? Une envie de proposer un événement ? Pour toute demande, n'hésitez
                     pas à
                     nous contacter via notre formulaire. Toute la team Escalagones se fera un plaisir de vous répondre.</p>
-                <a href="grimperEnsemble.html#formulaire" class="btn btn-success cardButton">Contactez-nous !</a>
+                <a href="grimperEnsemble.php#formulaire" class="btn btn-success cardButton">Contactez-nous !</a>
             </div>
         </div>
 
     </section>
-   
-    <footer>
-        <div class="liens-footer">
 
-            <a href="index.html" title="permet de retourner sur le haut de la page d'accueil">Retour à l'accueil</a>
-            <a href="grimperEnsemble.html#formulaire" title="ouvre un formulaire de contact">Contactez-nous</a>
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter"
-                title="permet de voir les mentions légales du site">Mentions légales</a>
-
-        </div>
-        <div class="reseaux-sociaux">
-            <img src="../images/facebook.png" alt="icone facebook">
-            <img src="../images/twitter.png" alt="icone twitter">
-            <img src="../images/instagram.png" alt="icone instagram">
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Mentions légales</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Auteurs : Adama - Amélie - Jeff - Justine - Nico - Pascal</p>
-                        <p>Wild Code School - Campus de Lyon - Session de mars 2020</p>
-                        <p>Escalagones est un site fictif créé dans le cadre du projet #1 du programme Développement Web
-                            (du 9 au 13 mars 2020). Les personnes et événements présentes sur le site sont fictifs.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include '_footer.html'; ?>
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -157,7 +98,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../JavaScript/app.js"></script>
+    <script src="JavaScript/app.js"></script>
 </body>
 
 </html>

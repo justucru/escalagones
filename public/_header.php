@@ -21,18 +21,17 @@
             <div class="barre"></div>
             <div class="barre"></div>
             <div class="barre"></div>
-            <div class="barre"></div>
         </div>
 
         <div class="body-header">
             <nav class="nav-bar-escalade">
-                <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="interieur.php">Intérieur</a></li>
-                    <li><a href="exterieur.php">Extérieur</a></li>
-                    <li><a href="grimperEnsemble.php">Grimper ensemble</a></li>
-                    <li><a href="materiel.php">Matériel</a></li>
-                    <li><a href="grimperEnsemble.php#formulaire" title="ouvre un formulaire de contact">Contactez-nous</a></li>
+                <ul id="navigation">
+                    <li <?php if ($nav_en_cours == 'index') {echo ' id="en-cours"';} ?>><a href="index.php">Accueil</a></li>
+                    <li <?php if ($nav_en_cours == 'interieur') {echo ' id="en-cours"';} ?>><a href="interieur.php">Intérieur</a></li>
+                    <li <?php if ($nav_en_cours == 'exterieur') {echo ' id="en-cours"';} ?>><a href="exterieur.php">Extérieur</a></li>
+                    <li <?php if ($nav_en_cours == 'ensemble') {echo ' id="en-cours"';} ?>><a href="grimperEnsemble.php">Grimper ensemble</a></li>
+                    <li <?php if ($nav_en_cours == 'materiel') {echo ' id="en-cours"';} ?>><a href="materiel.php">Matériel</a></li>
+                    <li <?php if ($nav_en_cours == 'contact') {echo ' id="en-cours"';} ?>><a href="contact.php" title="ouvre un formulaire de contact">Contact</a></li>
                 </ul>
             </nav>
         </div>

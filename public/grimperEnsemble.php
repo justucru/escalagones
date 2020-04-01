@@ -1,4 +1,7 @@
-<?php include '_header.html'; ?>
+<?php $nav_en_cours = 'ensemble'; ?>
+<?php include '_header.php'; ?>
+
+
 
 <main>
     <h2>Grimper Ensemble</h2>
@@ -69,51 +72,6 @@
         </div>
     </section>
 
-    <!-- Formulaire de contact -->
-    <div class="titresEnsemble">
-        <a id="formulaire"><h3>Formulaire de contact</h3></a>
-    </div>
-
-    <form class="sectionForm">
-        <!-- Menu déroulant avec les différents choix -->
-        <div class="form-group">
-            <select class="custom-select" required>
-                <option value="">Je souhaite proposer un événement</option>
-                <option value="">Je souhaite proposer un lieu</option>
-                <option value="">Je souhaite vous contacter</option>
-            </select>
-        </div>
-        <!-- Input de l'email et du message de l'utilisateur -->
-        <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Saisissez votre email">
-            <small id="emailHelp" class="form-text text-muted">On ne partagera jamais votre email avec quelqu'un d'autre.</small>
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Saisissez votre message"></textarea>
-        </div>
-        <div class="form_buttons">
-            <button type="reset" id="formButton" class="btn btn-light">Effacer</button>
-            <button type="submit" id="formButton2" class="btn btn-success">Envoyer !</button>
-        </div>
-    </form>
-
 </main>
 
 <?php include '_footer.html'; ?>
-
-<!-- JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="JavaScript/app.js"></script>
-</body>
-
-</html>

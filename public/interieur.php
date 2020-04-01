@@ -1,4 +1,7 @@
-<?php include '_header.html'; ?>
+<?php $nav_en_cours = 'interieur'; ?>
+<?php include '_header.php'; ?>
+
+
 
 <main>
     <h2 id="grimperensalle"> Grimper en intérieur </h2>
@@ -11,25 +14,22 @@
     </div>
 
     <div class="liste_salles">
-        <div class="listing_block">
-            <h3>Salles de bloc</h3>
-                <ul>
-                    <li class="li_menu-esc"><a href="#mroc">MROC LAENNEC </a></li>
-                    <li class="li_menu-esc"><a href="#mroc">MROC PART-DIEU </a></li>
-                    <li class="li_menu-esc"><a href="#mroc">MROC VILLEURBANNE </a></li>
-                </ul>
-        </div>
+    <?php
 
-        <div class="listing_voies">
-            <h3>Salles de voies</h3>
-                <ul>
-                    <li  class="li_menu-esc"><a href="#verticalart">VERTICAL'ART</a> </li>
-                    <li  class="li_menu-esc"><a href="#climbup">CLIMB UP LYON CONFLUENCE </a></li>
-                    <li  class="li_menu-esc"><a href="#climbup">CLIMB UP LYON GERLAND</a> </li>
-                    <li  class="li_menu-esc"><a href="#holdup">HOLD'UP ESCALADE</a> </li>
-                    <li  class="li_menu-esc"><a href="#arbresle">ESPACE ESALADE A L'ARBRESLE</a> </li>
-                </ul>
-        </div>
+    $listeSalles = [
+    'Salle de bloc' => ['<a href="#mroc">MROC LAENNEC </a>', '<a href="#mroc">MROC PART-DIEU </a>', '<a href="#mroc">MROC VILLEURBANNE </a>'],
+    'Salles de voie' => ['<a href="#verticalart">VERTICAL\'ART</a>', '<a href="#climbup">CLIMB UP LYON CONFLUENCE </a>', '<a href="#climbup">CLIMB UP LYON GERLAND</a>', '<a href="#holdup">HOLD\'UP ESCALADE</a>', '<a href="#arbresle">ESPACE ESALADE A L\'ARBRESLE</a>'],
+    ];
+
+    foreach ($listeSalles as $typeSalle=> $nomSalle) {
+    echo "<h3> $typeSalle </h3>";
+    echo "<ul>";
+        foreach ($nomSalle as $typeSalle) {
+        echo "<li class=\"li_menu-esc\">$typeSalle </li>";
+        }
+        echo "</ul>";
+    }
+    ?>
     </div>
 
     <article class="cardSalles">
@@ -129,19 +129,3 @@
 
 <?php include '_footer.html'; ?>
 
-<!-- JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="JavaScript/app.js"></script>
-</body>
-
-</html>

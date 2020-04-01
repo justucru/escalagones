@@ -28,13 +28,13 @@ h3 {
     text-align: center;
     margin-top: 20px;
 }
-.texteAccueil, .texteInterieur, .texteExterieur, .titresEnsemble, .sstitre {
+.texteAccueil, .texteInterieur, .texteExterieur, .texteForm .titresEnsemble, .sstitre {
     text-align: center;
     padding: 20px;
     width: 80%;
     margin: 50px auto;
 }
-.texteAccueil p, .texteInterieur p, .texteExterieur p {
+.texteAccueil p, .texteInterieur p, .texteExterieur p, .texteForm p {
     display: none;
 }
 
@@ -82,17 +82,16 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 200px;
-    padding-left: 20px;
 }
 .nav-bar-escalade ul li {
     margin: 10px 0;
-    padding: 10px;
+    padding: 20px;
     list-style-type: none;
     height: 100%;
     width: 80%;
 }
 .nav-bar-escalade ul li a {
-    padding: 10px;
+    padding: 20px;
     font-size: 24px;
     color: white;
     text-decoration: none;
@@ -100,17 +99,21 @@ header {
     height: 100%;
     text-align: center;
 }
-.nav-bar-escalade ul li:hover{
+.nav-bar-escalade ul li:hover,
+#en-cours {
     background-color: aliceblue;
-    color: green;
+    color: #5cb85c;
 }
-.nav-bar-escalade ul li a:hover {
-    padding: 10px;
+.nav-bar-escalade ul li a:hover,
+#en-cours a {
+    padding: 20px;
     font-size: 24px;
     color: #5cb85c;
     text-decoration: none;
     background-color: aliceblue;
 }
+
+
 
 /*index*/
 #banniere {
@@ -268,15 +271,6 @@ header {
     color : grey;
     text-align: left;
 }
-.form_buttons {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    margin-right: 10%;
-}
-#formButton, #formButton2 {
-    margin-left: 10px;
-}
 
 /*materiel*/
 .indooras {
@@ -393,6 +387,32 @@ thead {
     align-items: center;
 }
 
+/*Formulaire de contact*/
+.form_buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-right: 10%;
+}
+#formButton, #formButton2 {
+    margin-left: 10px;
+}
+.error {
+    color: red;
+}
+.merci {
+    text-align: center;
+}
+.merci li {
+    font-style: italic;
+}
+#retour {
+    text-align: center;
+}
+#retour a {
+    color: #5cb85c;
+}
+
 /*footer*/
 footer {
     background-color: #292b2c;
@@ -470,12 +490,13 @@ footer img {
     list-style-type: none;
     }
     .nav-bar-escalade ul li :hover,
-    .nav-bar-escalade ul li a:hover {
+    .nav-bar-escalade ul li a:hover,
+    #en-cours a {
     background-color: aliceblue;
     color: #5cb85c;
     }
     /*commun*/
-    .texteAccueil p, .texteInterieur p, .texteExterieur p {
+    .texteAccueil p, .texteInterieur p, .texteExterieur p, .texteForm p {
         display: block;
     }
 

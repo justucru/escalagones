@@ -1,6 +1,44 @@
 <?php $nav_en_cours = 'materiel'; ?>
 <?php include '_header.php'; ?>
 
+<?php
+
+$materiels = [
+    'Bloc en intérieur' => [
+            'Chaussons' => 'Indispensable',
+            'Harnais' => 'Non',
+            'Assureur' => 'Non',
+            'Magnésie' => 'Si nécessaire',
+            'Corde' => 'Non',
+            'Casque' => 'Non'
+        ],
+    'Voie en intérieur' => [
+        'Chaussons' => 'Indispensable',
+        'Harnais' => 'Indispensable',
+        'Assureur' => 'Indispensable',
+        'Magnésie' => 'Si nécessaire',
+        'Corde' => 'Si non prêtée',
+        'Casque' => 'Non'
+        ],
+    'Bloc en extérieur' => [
+        'Chaussons' => 'Indispensable',
+        'Harnais' => 'Non',
+        'Assureur' => 'Non',
+        'Magnésie' => 'Si nécessaire',
+        'Corde' => 'Non',
+        'Casque' => 'Recommandé'
+        ],
+    'Voie en extérieur' => [
+        'Chaussons' => 'Indispensable',
+        'Harnais' => 'Indispensable',
+        'Assureur' => 'Indispensable',
+        'Magnésie' => 'Si nécessaire',
+        'Corde' => 'Indispensable',
+        'Casque' => 'Recommandé'
+        ]
+]
+
+?>
 
 
 <main>
@@ -91,21 +129,15 @@
     <h3 class="choixMateriel sstitre">De quel matériel avez-vous besoin ?</h3>
         <div class="table-responsive">
             <table class="table table-hover">
-<?php
-
-
-
-?>
-
               <thead>
                 <tr>
-                  <th scope="col">Matériel</th>
-                  <th scope="col">Chaussons</th>
-                  <th scope="col">Harnais</th>
-                  <th scope="col">Assureur</th>
-                  <th scope="col">Magnésie</th>
-                  <th scope="col">Corde</th>
-                  <th scope="col">Casque</th>
+                    <th scope="col">Matériel</th>
+                    <th scope="col">Chaussons</th>
+                    <th scope="col">Harnais</th>
+                    <th scope="col">Assureur</th>
+                    <th scope="col">Magnésie</th>
+                    <th scope="col">Corde</th>
+                    <th scope="col">Casque</th>
                 </tr>
               </thead>
               <tbody>
